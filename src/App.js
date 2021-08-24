@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { darkTheme, lightTheme } from "./components/Theme/theme";
+import About from "./components/About";
+import Home from "./components/Home";
 
 function App() {
+  const [isDark, setIsDark] = useState(false);
+  const handleSwitchTheme = () => {
+    setIsDark(!isDark);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
+          <Route path="/" exact>
+            <Home handleSwitchTheme={handleSwitchTheme} />
+          </Route>
+          <Route path="/about" exact>
+            <About handleSwitchTheme={handleSwitchTheme} />
+          </Route>
+          <Route path="/project"></Route>
+        </ThemeProvider>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
