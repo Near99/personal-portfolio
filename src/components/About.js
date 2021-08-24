@@ -25,7 +25,7 @@ function About({ handleSwitchTheme }) {
               </List>
               <List>
                 <OuterLinkLeft>Curabitur</OuterLinkLeft>
-                <OuterLinkRight>View Curabitur</OuterLinkRight>
+                <OuterLinkRight>View Aenean</OuterLinkRight>
                 <P>
                   In nec mauris sed nunc convallis placerat eget in risus. Morbi
                   non erat id enim hendrerit porttitor. Pellentesque iaculis,
@@ -57,7 +57,7 @@ function About({ handleSwitchTheme }) {
         </ContentSection>
 
         <ContentSection>
-          <Title>About Me.</Title>
+          <Title>Technologies I've been studying on.</Title>
           <Background>
             <UL>
               <List>
@@ -74,7 +74,7 @@ function About({ handleSwitchTheme }) {
               </List>
               <List>
                 <OuterLinkLeft>Curabitur</OuterLinkLeft>
-                <OuterLinkRight>View Curabitur</OuterLinkRight>
+                <OuterLinkRight>View Aenean</OuterLinkRight>
                 <P>
                   In nec mauris sed nunc convallis placerat eget in risus. Morbi
                   non erat id enim hendrerit porttitor. Pellentesque iaculis,
@@ -130,6 +130,10 @@ const ContentSection = styled.section`
   width: 60%;
   height: 50vh;
 
+  @media screen and (max-width: 2385px) {
+    height: auto;
+  }
+
   @media screen and (max-width: 742px) {
     height: auto;
   }
@@ -138,6 +142,11 @@ const ContentSection = styled.section`
 const Title = styled.h1`
   font-size: 4.5rem;
   margin: 5rem 0 1.5rem 0;
+
+  @media screen and (max-width: 1500px) {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
 
   @media screen and (max-width: 742px) {
     font-size: 2.5rem;
@@ -162,7 +171,6 @@ const UL = styled.ul`
     width: 1px;
     top: 4px;
     height: 100%;
-    z-index: 400;
   }
 `;
 
@@ -177,12 +185,12 @@ const List = styled.li`
     display: inline-block;
     position: absolute;
     border-radius: 50%;
+    background-color: ${(props) => props.theme.bgc};
     border: 2px solid ${(props) => props.theme.circle};
     left: -9px;
     width: 15px;
     height: 15px;
     margin-top: 3px;
-    z-index: 400;
   }
 
   @media screen and (max-width: 742px) {

@@ -1,39 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { BsHouseFill, BsJustify, BsCircleHalf } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 function Header({ handleSwitchTheme }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <HeaderContainer>
-      <Navbar>
-        <HomeIcon>
-          <NavLink to="/personal-portfolio">
-            <BsHouseFill />
-          </NavLink>
-        </HomeIcon>
-        <MenuIcon>
-          <BsJustify />
-        </MenuIcon>
-        <NavOL>
-          <NavList>
-            <NavLink to="/personal-portfolio/about">About</NavLink>
-          </NavList>
-          <NavList>
-            <NavLink to="project">Project</NavLink>
-          </NavList>
-          <NavList>
-            <NavLink to="resume">Resume</NavLink>
-          </NavList>
-          <NavList>
-            <NavLink to="contact">Contact</NavLink>
-          </NavList>
-          <SwitchThemeIcon onClick={handleSwitchTheme}>
-            <BsCircleHalf />
-          </SwitchThemeIcon>
-        </NavOL>
-      </Navbar>
-    </HeaderContainer>
+    <div>
+      <HeaderContainer>
+        <Navbar>
+          <HomeIcon>
+            <NavLink to="/personal-portfolio">
+              <BsHouseFill />
+            </NavLink>
+          </HomeIcon>
+          <MenuIcon onClick={toggle}>
+            <BsJustify />
+          </MenuIcon>
+          <NavOL>
+            <NavList>
+              <NavLink to="/personal-portfolio/about">About</NavLink>
+            </NavList>
+            <NavList>
+              <NavLink to="project">Project</NavLink>
+            </NavList>
+            <NavList>
+              <NavLink to="resume">Resume</NavLink>
+            </NavList>
+            <NavList>
+              <NavLink to="contact">Contact</NavLink>
+            </NavList>
+            <SwitchThemeIcon onClick={handleSwitchTheme}>
+              <BsCircleHalf />
+            </SwitchThemeIcon>
+          </NavOL>
+
+          <MobileMenu isOpen={isOpen} onClick={toggle}>
+            <MobileMenuOL>
+              <MobileList>
+                <MobileSwitchThemeIcon onClick={handleSwitchTheme}>
+                  <BsCircleHalf />
+                </MobileSwitchThemeIcon>
+              </MobileList>
+              <MobileList>
+                <NavLink to="/personal-portfolio/about">About</NavLink>
+              </MobileList>
+              <MobileList>
+                <NavLink to="project">Project</NavLink>
+              </MobileList>
+              <MobileList>
+                <NavLink to="resume">Resume</NavLink>
+              </MobileList>
+              <MobileList>
+                <NavLink to="contact">Contact</NavLink>
+              </MobileList>
+            </MobileMenuOL>
+          </MobileMenu>
+        </Navbar>
+      </HeaderContainer>
+    </div>
   );
 }
 
@@ -107,4 +137,46 @@ const NavLink = styled(Link)`
   &:active {
     border-bottom: 2px solid green;
   }
+`;
+
+const MobileMenu = styled.div`
+  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+  position: fixed;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  height: 190vh;
+  width: 100%;
+  background: ${(props) => props.theme.bgc};
+  right: 1px;
+  transition: 0.3s all ease-in-out;
+`;
+
+const MobileMenuOL = styled.ul`
+  z-index: 999;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  margin: auto;
+  height: 190vh;
+`;
+
+const MobileList = styled.li`
+  z-index: 999;
+  position: relative;
+  list-style: none;
+  top: 25rem;
+  margin: 2rem 0;
+`;
+
+const MobileSwitchThemeIcon = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 `;
