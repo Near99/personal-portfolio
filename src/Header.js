@@ -79,7 +79,7 @@ const HeaderContainer = styled.header`
   z-index: 3;
   background-color: ${(props) => props.theme.bgc};
   color: ${(props) => props.theme.textc};
-  transition: all 0.2s ease;
+  transition: 0.3s all ease;
 `;
 
 const Navbar = styled.nav`
@@ -151,7 +151,7 @@ const MobileMenu = styled.div`
   width: 100%;
   background: ${(props) => props.theme.bgc};
   right: 1px;
-  transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease;
 `;
 
 const MobileMenuOL = styled.ul`
