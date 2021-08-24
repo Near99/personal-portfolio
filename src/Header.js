@@ -17,7 +17,7 @@ function Header({ handleSwitchTheme }) {
         </MenuIcon>
         <NavOL>
           <NavList>
-            <NavLink to="about">About</NavLink>
+            <NavLink to="/personal-portfolio/about">About</NavLink>
           </NavList>
           <NavList>
             <NavLink to="project">Project</NavLink>

@@ -17,7 +17,7 @@ function Routes() {
           <Route path="/personal-portfolio" exact>
             <App handleSwitchTheme={handleSwitchTheme} />
           </Route>
-          <Route path="/about" exact>
+          <Route path="/personal-portfolio/about" exact>
             <About handleSwitchTheme={handleSwitchTheme} />
           </Route>
           <Route path="/project"></Route>
