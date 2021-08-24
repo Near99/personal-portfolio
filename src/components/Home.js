@@ -32,7 +32,9 @@ function Home({ handleSwitchTheme }) {
           </TextContainer>
 
           <GoAboutMe>
-            <GoAboutMeLink to="about">Learn More About Me</GoAboutMeLink>
+            <GoAboutMeLink to="/personal-portfolio/about">
+              Learn More About Me
+            </GoAboutMeLink>
             <GoAboutMeIcon>
               <HiArrowNarrowRight />
             </GoAboutMeIcon>
