@@ -8,7 +8,7 @@ function Header({ handleSwitchTheme }) {
     <HeaderContainer>
       <Navbar>
         <HomeIcon>
-          <NavLink to="/">
+          <NavLink to="/personal-portfolio">
             <BsHouseFill />
           </NavLink>
         </HomeIcon>
