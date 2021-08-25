@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import Header from "../Header";
 import styled from "styled-components";
@@ -11,7 +12,7 @@ function Home({ handleSwitchTheme }) {
       <HomeSection>
         <HeroContainer>
           <TextContainer>
-            <NameHeading>I'm Kaixing Wang</NameHeading>
+            <NameHeading>I am Kaixing Wang</NameHeading>
           </TextContainer>
           <TextContainer>
             <BriefIntro>

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header";
 import styled from "styled-components";
 
+// eslint-disable-next-line react/prop-types
 function About({ handleSwitchTheme }) {
   return (
     <div>
@@ -57,7 +58,7 @@ function About({ handleSwitchTheme }) {
         </ContentSection>
 
         <ContentSection>
-          <Title>Technologies I've been studying on.</Title>
+          <Title>Technologies I have been studying on.</Title>
           <Background>
             <UL>
               <List>
