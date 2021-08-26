@@ -2,14 +2,17 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { BsHouseFill, BsJustify, BsCircleHalf } from "react-icons/bs";
+import { IoLanguageSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-function Header({ handleSwitchTheme }) {
+function Header({ handleSwitchTheme, handleSwitchLanguage, data }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  const { about, contact, project, resume } = data.nav;
 
   return (
     <div>
@@ -25,40 +28,48 @@ function Header({ handleSwitchTheme }) {
           </MenuIcon>
           <NavOL>
             <NavList>
-              <NavLink to="/personal-portfolio/about">About</NavLink>
+              <NavLink to="/personal-portfolio/about">{about}</NavLink>
             </NavList>
             <NavList>
-              <NavLink to="project">Project</NavLink>
+              <NavLink to="project">{project}</NavLink>
             </NavList>
             <NavList>
-              <NavLink to="resume">Resume</NavLink>
+              <NavLink to="resume">{resume}</NavLink>
             </NavList>
             <NavList>
-              <NavLink to="contact">Contact</NavLink>
+              <NavLink to="contact">{contact}</NavLink>
             </NavList>
             <SwitchThemeIcon onClick={handleSwitchTheme}>
               <BsCircleHalf />
+            </SwitchThemeIcon>
+            <SwitchThemeIcon onClick={handleSwitchLanguage}>
+              <IoLanguageSharp />
             </SwitchThemeIcon>
           </NavOL>
 
           <MobileMenu isOpen={isOpen} onClick={toggle}>
             <MobileMenuOL>
               <MobileList>
+                <MobileSwitchThemeIcon onClick={handleSwitchLanguage}>
+                  <IoLanguageSharp />
+                </MobileSwitchThemeIcon>
+              </MobileList>
+              <MobileList>
                 <MobileSwitchThemeIcon onClick={handleSwitchTheme}>
                   <BsCircleHalf />
                 </MobileSwitchThemeIcon>
               </MobileList>
               <MobileList>
-                <NavLink to="/personal-portfolio/about">About</NavLink>
+                <NavLink to="/personal-portfolio/about">{about}</NavLink>
               </MobileList>
               <MobileList>
-                <NavLink to="project">Project</NavLink>
+                <NavLink to="project">{project}</NavLink>
               </MobileList>
               <MobileList>
-                <NavLink to="resume">Resume</NavLink>
+                <NavLink to="resume">{resume}</NavLink>
               </MobileList>
               <MobileList>
-                <NavLink to="contact">Contact</NavLink>
+                <NavLink to="contact">{contact}</NavLink>
               </MobileList>
             </MobileMenuOL>
           </MobileMenu>

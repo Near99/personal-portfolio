@@ -5,36 +5,30 @@ import styled from "styled-components";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
-function Home({ handleSwitchTheme }) {
+function Home({ handleSwitchTheme, handleSwitchLanguage, data }) {
+  const { nameHeading, briefIntroOne, briefIntroTwo, moreAboutMe } = data.home;
   return (
     <div>
-      <Header handleSwitchTheme={handleSwitchTheme} />
+      <Header
+        handleSwitchTheme={handleSwitchTheme}
+        handleSwitchLanguage={handleSwitchLanguage}
+        data={data}
+      />
       <HomeSection>
         <HeroContainer>
           <TextContainer>
-            <NameHeading>I am Kaixing Wang</NameHeading>
+            <NameHeading>{nameHeading}</NameHeading>
           </TextContainer>
           <TextContainer>
-            <BriefIntro>
-              Nulla facilisi. Donec molestie venenatis nisl vitae varius. Fusce
-              elementum quis tellus in rhoncus sed ac felis at tortor porttitor.
-              Maecenas neque turpis, accumsan tincidunt diam eu, finibus
-              ullamcorper metus.
-            </BriefIntro>
+            <BriefIntro>{briefIntroOne}</BriefIntro>
           </TextContainer>
           <TextContainer>
-            <BriefIntro>
-              In nec mauris sed nunc convallis placerat eget in risus. Morbi non
-              erat id enim hendrerit porttitor. Pellentesque iaculis. Morbi non
-              erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a
-              lobortis ultricies, tortor tortor accumsan elit, id interdum est
-              purus ut nisi. Vivamus consequat et elit quis maximus. Donec
-            </BriefIntro>
+            <BriefIntro>{briefIntroTwo}</BriefIntro>
           </TextContainer>
 
           <GoAboutMe>
             <GoAboutMeLink to="/personal-portfolio/about">
-              Learn More About Me
+              {moreAboutMe}
             </GoAboutMeLink>
             <GoAboutMeIcon>
               <HiArrowNarrowRight />

@@ -4,21 +4,37 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./components/Theme/theme";
 import About from "./components/About";
 import App from "./App";
+import { data } from "./data";
 
 function Routes() {
   const [isDark, setIsDark] = useState(false);
   const handleSwitchTheme = () => {
     setIsDark(!isDark);
   };
+
+  const [isChinese, setIsChinese] = useState(false);
+  const handleSwitchLanguage = () => {
+    setIsChinese(!isChinese);
+  };
+
+  const { english, chinese } = data;
   return (
     <BrowserRouter>
       <Switch>
         <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
           <Route path="/personal-portfolio" exact>
-            <App handleSwitchTheme={handleSwitchTheme} />
+            <App
+              data={isChinese ? chinese : english}
+              handleSwitchTheme={handleSwitchTheme}
+              handleSwitchLanguage={handleSwitchLanguage}
+            />
           </Route>
           <Route path="/personal-portfolio/about" exact>
-            <About handleSwitchTheme={handleSwitchTheme} />
+            <About
+              data={isChinese ? chinese : english}
+              handleSwitchLanguage={handleSwitchLanguage}
+              handleSwitchTheme={handleSwitchTheme}
+            />
           </Route>
           <Route path="/project"></Route>
         </ThemeProvider>

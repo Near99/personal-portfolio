@@ -3,10 +3,14 @@ import Header from "../Header";
 import styled from "styled-components";
 
 // eslint-disable-next-line react/prop-types
-function About({ handleSwitchTheme }) {
+function About({ handleSwitchTheme, handleSwitchLanguage, data }) {
   return (
     <div>
-      <Header handleSwitchTheme={handleSwitchTheme} />
+      <Header
+        handleSwitchTheme={handleSwitchTheme}
+        handleSwitchLanguage={handleSwitchLanguage}
+        data={data}
+      />
       <MainSection>
         <ContentSection>
           <Title>About Me.</Title>
