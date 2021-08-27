@@ -31,13 +31,13 @@ function Header({ handleSwitchTheme, handleSwitchLanguage, data }) {
               <NavLink to="/personal-portfolio/about">{about}</NavLink>
             </NavList>
             <NavList>
-              <NavLink to="project">{project}</NavLink>
+              <NavLink to="/personal-portfolio/project">{project}</NavLink>
             </NavList>
             <NavList>
-              <NavLink to="resume">{resume}</NavLink>
+              <NavLink to="/personal-portfolio/resume">{resume}</NavLink>
             </NavList>
             <NavList>
-              <NavLink to="contact">{contact}</NavLink>
+              <NavLink to="/personal-portfolio/contact">{contact}</NavLink>
             </NavList>
             <SwitchThemeIcon onClick={handleSwitchTheme}>
               <BsCircleHalf />
@@ -63,13 +63,13 @@ function Header({ handleSwitchTheme, handleSwitchLanguage, data }) {
                 <NavLink to="/personal-portfolio/about">{about}</NavLink>
               </MobileList>
               <MobileList>
-                <NavLink to="project">{project}</NavLink>
+                <NavLink to="/personal-portfolio/project">{project}</NavLink>
               </MobileList>
               <MobileList>
-                <NavLink to="resume">{resume}</NavLink>
+                <NavLink to="/personal-portfolio/resume">{resume}</NavLink>
               </MobileList>
               <MobileList>
-                <NavLink to="contact">{contact}</NavLink>
+                <NavLink to="/personal-portfolio/contact">{contact}</NavLink>
               </MobileList>
             </MobileMenuOL>
           </MobileMenu>

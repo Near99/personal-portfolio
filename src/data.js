@@ -21,39 +21,98 @@ export const data = {
               purus ut nisi. Vivamus consequat et elit quis maximus. Donec`,
       moreAboutMe: "Learn More About Me",
     },
-    aboutTitle: "About Me.",
-    about: [
-      {
-        left: "Mauris",
-        right: "View Mauris",
-        p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
-      },
-      {
-        left: "Mauris",
-        right: "View Mauris",
-        p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
-      },
-      {
-        left: "Mauris",
-        right: "View Mauris",
-        p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
-      },
-      {
-        left: "Mauris",
-        right: "View Mauris",
-        p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
-      },
-      {
-        left: "Mauris",
-        right: "View Mauris",
-        p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
-      },
-      {
-        left: "Mauris",
-        right: "View Mauris",
-        p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
-      },
-    ],
+    about: {
+      aboutTitle: "About Me.",
+      aboutInfo: [
+        {
+          left: "Mauris",
+          right: "View Mauris",
+          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+        },
+        {
+          left: "Mauris",
+          right: "View Mauris",
+          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+        },
+        {
+          left: "Mauris",
+          right: "View Mauris",
+          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+        },
+        {
+          left: "Mauris",
+          right: "View Mauris",
+          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+        },
+        {
+          left: "Mauris",
+          right: "View Mauris",
+          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+        },
+        {
+          left: "Mauris",
+          right: "View Mauris",
+          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+        },
+      ],
+    },
+    project: {
+      projectTitle: "Little things I have done.",
+      projectInfo: [
+        {
+          left: "Mauris",
+          right: "View Mauris",
+          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+        },
+        {
+          left: "Mauris",
+          right: "View Mauris",
+          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+        },
+        {
+          left: "Mauris",
+          right: "View Mauris",
+          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+        },
+        {
+          left: "Mauris",
+          right: "View Mauris",
+          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+        },
+        {
+          left: "Mauris",
+          right: "View Mauris",
+          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+        },
+        {
+          left: "Mauris",
+          right: "View Mauris",
+          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+        },
+      ],
+    },
+    contact: {
+      title: "How to react me",
+      contactInfo: [
+        { left: "Phone", right: "+86-0120-2433", address: "+86-0120-2433" },
+        { left: "Wechat", right: "18601202433", address: "18601202433" },
+        {
+          left: "Email",
+          right: "wkx0823@gmail.com",
+          address: "wkx0823@gmail.com",
+        },
+        {
+          left: "Github",
+          right: "https://github.com/Near99",
+          address: "https://github.com/Near99",
+        },
+        {
+          left: "Linkedin",
+          right: "https://www.linkedin.com/in/kaixing-wong-b8b983145/",
+          address: "https://www.linkedin.com/in/kaixing-wong-b8b983145/",
+        },
+      ],
+    },
   },
 
   chinese: {
@@ -73,43 +132,108 @@ export const data = {
               `,
       moreAboutMe: "了解更多",
     },
-    aboutTitle: "关于我",
-    about: [
-      {
-        left: "波金",
-        right: "查看波金",
-        p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
-      },
-      {
-        left: "波金",
-        right: "查看波金",
-        p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
-      },
-      {
-        left: "波金",
-        right: "查看波金",
-        p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
-      },
-      {
-        left: "波金",
-        right: "查看波金",
-        p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
-      },
-      {
-        left: "波金",
-        right: "查看波金",
-        p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
-      },
-      {
-        left: "波金",
-        right: "查看波金",
-        p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
-      },
-      {
-        left: "波金",
-        right: "查看波金",
-        p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
-      },
-    ],
+    about: {
+      aboutTitle: "关于我",
+      aboutInfo: [
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+      ],
+    },
+
+    project: {
+      projectTitle: "吉尾還首春種雨",
+      projectInfo: [
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+        {
+          left: "波金",
+          right: "查看波金",
+          p: `牛四告訴黃動美十夏同，吉尾還首春種雨祖走春、哥黃卜良位來牠枝水校斥造，聲申爬。木發土胡。面金師十英喝急英只，未彩明經！吃羊歌沒品請行前晚泉許誰生菜朵頁身，反用兆南綠旁？包掃央裏害青月歡。南怕何休歌跟喜到公自小公太冰第、首她大早魚禾昔光同何奶爬借前波：鴨收跑枝兒父後，就棵因知珠千？把汗跳爬方金耳跟吹占成休婆，兆去發肉這字平忍戊行節節，發對一才。斥新共國果洋貝邊化音小地紅？時瓜民國跟。`,
+        },
+      ],
+    },
+    contact: {
+      title: "How to react me",
+      contactInfo: [
+        { left: "Phone", right: "+86-0120-2433", address: "+86-0120-2433" },
+        { left: "Wechat", right: "18601202433", address: "18601202433" },
+        {
+          left: "Email",
+          right: "wkx0823@gmail.com",
+          address: "wkx0823@gmail.com",
+        },
+        {
+          left: "Github",
+          right: "https://github.com/Near99",
+          address: "https://github.com/Near99",
+        },
+        {
+          left: "Linkedin",
+          right: "https://www.linkedin.com/in/kaixing-wong-b8b983145/",
+          address: "https://www.linkedin.com/in/kaixing-wong-b8b983145/",
+        },
+      ],
+    },
   },
 };

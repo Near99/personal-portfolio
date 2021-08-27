@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     *, ::before, ::after {
       box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
     }
   }
 

@@ -3,10 +3,10 @@ import React from "react";
 import Header from "../Header";
 import styled from "styled-components";
 
-function About({ handleSwitchTheme, handleSwitchLanguage, data }) {
-  const aboutTitle = data.about.aboutTitle;
-  const aboutInfo = data.about.aboutInfo;
-  const about = aboutInfo.map((about, index) => {
+function Project({ handleSwitchTheme, handleSwitchLanguage, data }) {
+  const projectTitle = data.project.projectTitle;
+  const projectInfo = data.project.projectInfo;
+  const project = projectInfo.map((about, index) => {
     return (
       <List key={index}>
         <OuterLinkLeft>{about.left}</OuterLinkLeft>
@@ -24,9 +24,9 @@ function About({ handleSwitchTheme, handleSwitchLanguage, data }) {
       />
       <MainSection>
         <ContentSection>
-          <Title>{aboutTitle}</Title>
+          <Title>{projectTitle}</Title>
           <Background>
-            <UL>{about}</UL>
+            <UL>{project}</UL>
           </Background>
         </ContentSection>
       </MainSection>
@@ -34,7 +34,7 @@ function About({ handleSwitchTheme, handleSwitchLanguage, data }) {
   );
 }
 
-export default About;
+export default Project;
 
 const MainSection = styled.div`
   display: flex;

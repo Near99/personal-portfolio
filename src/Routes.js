@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./components/Theme/theme";
-import About from "./components/About";
 import App from "./App";
+import About from "./components/About";
+import Project from "./components/Project";
+import Contact from "./components/Contact";
 import { data } from "./data";
 
 function Routes() {
@@ -36,7 +38,20 @@ function Routes() {
               handleSwitchTheme={handleSwitchTheme}
             />
           </Route>
-          <Route path="/project"></Route>
+          <Route path="/personal-portfolio/project" exact>
+            <Project
+              data={isChinese ? chinese : english}
+              handleSwitchLanguage={handleSwitchLanguage}
+              handleSwitchTheme={handleSwitchTheme}
+            />
+          </Route>
+          <Route path="/personal-portfolio/contact" exact>
+            <Contact
+              data={isChinese ? chinese : english}
+              handleSwitchLanguage={handleSwitchLanguage}
+              handleSwitchTheme={handleSwitchTheme}
+            />
+          </Route>
         </ThemeProvider>
       </Switch>
     </BrowserRouter>
