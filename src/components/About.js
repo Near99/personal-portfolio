@@ -1,9 +1,19 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import Header from "../Header";
 import styled from "styled-components";
 
-// eslint-disable-next-line react/prop-types
 function About({ handleSwitchTheme, handleSwitchLanguage, data }) {
+  const aboutInfo = data.about;
+  const about = aboutInfo.map((about, index) => {
+    return (
+      <List key={index}>
+        <OuterLinkLeft>{about.left}</OuterLinkLeft>
+        <OuterLinkRight>{about.right}</OuterLinkRight>
+        <P>{about.p}</P>
+      </List>
+    );
+  });
   return (
     <div>
       <Header
@@ -13,100 +23,9 @@ function About({ handleSwitchTheme, handleSwitchLanguage, data }) {
       />
       <MainSection>
         <ContentSection>
-          <Title>About Me.</Title>
+          <Title>{data.aboutTitle}</Title>
           <Background>
-            <UL>
-              <List>
-                <OuterLinkLeft>Aenean</OuterLinkLeft>
-                <OuterLinkRight>View Aenean</OuterLinkRight>
-                <P>
-                  Aenean non tristique massa. Nulla facilisi. Donec molestie
-                  venenatis nisl vitae varius. Fusce elementum quis tellus in
-                  rhoncus. Sed ac felis at tortor porttitor gravida. Fusce
-                  volutpat urna at lorem fermentum, ac eleifend sapien cursus.
-                  Donec nec ultrices nulla. Curabitur sit amet dignissim nisi.
-                  Nulla vitae feugiat tellus.
-                </P>
-              </List>
-              <List>
-                <OuterLinkLeft>Curabitur</OuterLinkLeft>
-                <OuterLinkRight>View Aenean</OuterLinkRight>
-                <P>
-                  In nec mauris sed nunc convallis placerat eget in risus. Morbi
-                  non erat id enim hendrerit porttitor. Pellentesque iaculis,
-                  nibh a lobortis ultricies, tortor tortor accumsan elit, id
-                  interdum est purus ut nisi. Vivamus consequat et elit quis
-                  maximus. Donec ultrices tristique risus, eu auctor felis
-                  lacinia sit amet. Nulla sollicitudin ante nec lobortis
-                  faucibus. Mauris fringilla nulla urna, ac semper nisl
-                  vulputate sed. Maecenas venenatis convallis turpis et
-                  sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim
-                  arcu sodales sapien, at rutrum sem lacus in erat.
-                </P>
-              </List>
-              <List>
-                <OuterLinkLeft>Mauris</OuterLinkLeft>
-                <OuterLinkRight>View Mauris</OuterLinkRight>
-                <P>
-                  Duis faucibus dui eu ligula pulvinar, a elementum tortor
-                  dictum. Duis laoreet, lectus eu dapibus vehicula, erat mi
-                  maximus eros, nec condimentum dui nisl eu enim. Maecenas neque
-                  turpis, accumsan tincidunt diam eu, finibus ullamcorper metus.
-                  Pellentesque a placerat tellus. Sed sapien nisi, efficitur in
-                  diam sed, semper fringilla lorem. Quisque at diam at arcu
-                  viverra laoreet. Fusce ullamcorper sed libero sed posuere.
-                </P>
-              </List>
-            </UL>
-          </Background>
-        </ContentSection>
-
-        <ContentSection>
-          <Title>Technologies I have been studying on.</Title>
-          <Background>
-            <UL>
-              <List>
-                <OuterLinkLeft>Aenean</OuterLinkLeft>
-                <OuterLinkRight>View Aenean</OuterLinkRight>
-                <P>
-                  Aenean non tristique massa. Nulla facilisi. Donec molestie
-                  venenatis nisl vitae varius. Fusce elementum quis tellus in
-                  rhoncus. Sed ac felis at tortor porttitor gravida. Fusce
-                  volutpat urna at lorem fermentum, ac eleifend sapien cursus.
-                  Donec nec ultrices nulla. Curabitur sit amet dignissim nisi.
-                  Nulla vitae feugiat tellus.
-                </P>
-              </List>
-              <List>
-                <OuterLinkLeft>Curabitur</OuterLinkLeft>
-                <OuterLinkRight>View Aenean</OuterLinkRight>
-                <P>
-                  In nec mauris sed nunc convallis placerat eget in risus. Morbi
-                  non erat id enim hendrerit porttitor. Pellentesque iaculis,
-                  nibh a lobortis ultricies, tortor tortor accumsan elit, id
-                  interdum est purus ut nisi. Vivamus consequat et elit quis
-                  maximus. Donec ultrices tristique risus, eu auctor felis
-                  lacinia sit amet. Nulla sollicitudin ante nec lobortis
-                  faucibus. Mauris fringilla nulla urna, ac semper nisl
-                  vulputate sed. Maecenas venenatis convallis turpis et
-                  sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim
-                  arcu sodales sapien, at rutrum sem lacus in erat.
-                </P>
-              </List>
-              <List>
-                <OuterLinkLeft>Mauris</OuterLinkLeft>
-                <OuterLinkRight>View Mauris</OuterLinkRight>
-                <P>
-                  Duis faucibus dui eu ligula pulvinar, a elementum tortor
-                  dictum. Duis laoreet, lectus eu dapibus vehicula, erat mi
-                  maximus eros, nec condimentum dui nisl eu enim. Maecenas neque
-                  turpis, accumsan tincidunt diam eu, finibus ullamcorper metus.
-                  Pellentesque a placerat tellus. Sed sapien nisi, efficitur in
-                  diam sed, semper fringilla lorem. Quisque at diam at arcu
-                  viverra laoreet. Fusce ullamcorper sed libero sed posuere.
-                </P>
-              </List>
-            </UL>
+            <UL>{about}</UL>
           </Background>
         </ContentSection>
       </MainSection>
@@ -121,10 +40,18 @@ const MainSection = styled.div`
   flex-flow: column;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 120vh;
   background: ${(props) => props.theme.bgc};
   color: ${(props) => props.theme.textc};
   transition: all 0.4s ease-in-out;
+
+  @media screen and (max-width: 3300px) {
+    height: 130vh;
+  }
+
+  @media screen and (max-width: 1965px) {
+    height: auto;
+  }
 
   @media screen and (max-width: 742px) {
     height: auto;
@@ -134,6 +61,10 @@ const MainSection = styled.div`
 const ContentSection = styled.section`
   width: 60%;
   height: 50vh;
+
+  @media screen and (max-width: 3128px) {
+    height: auto;
+  }
 
   @media screen and (max-width: 2385px) {
     height: auto;
