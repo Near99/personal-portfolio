@@ -9,35 +9,30 @@ export const data = {
     home: {
       nameHeading: `I'm Kaixing Wang`,
       briefIntroOne: `
-              Nulla facilisi. Donec molestie venenatis nisl vitae varius. Fusce
-              elementum quis tellus in rhoncus sed ac felis at tortor porttitor.
-              Maecenas neque turpis, accumsan tincidunt diam eu, finibus
-              ullamcorper metus.
+      Hello there, I am a self-taught full-stack developer who has been learning by coding full-time via varieties of both paid and free resources online at home for three months. I have developed fairly good foundations with frontend technologies, and I am able to build functional web applications. Currently I am learning backend technologies starting with Node.js and MongoDB after finishing working with JavaScript (ES6+), React, HTML5, CSS3 in the browser.
         `,
-      briefIntroTwo: ` In nec mauris sed nunc convallis placerat eget in risus. Morbi non
-              erat id enim hendrerit porttitor. Pellentesque iaculis. Morbi non
-              erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a
-              lobortis ultricies, tortor tortor accumsan elit, id interdum est
-              purus ut nisi. Vivamus consequat et elit quis maximus. Donec`,
+      briefIntroTwo: `There is also a lot of time I spent on computer fundamental knowledge such as Data Structure and Algorithms, Computer networks, Operating systems, and Databases. I aim to be a real software engineer rather than a developer who can only code but knowing nothing of what is happening under the hood. You can go to the About page to check what I have been learning so far in more detail by clicking the link below. Thank you.`,
       moreAboutMe: "Learn More About Me",
     },
     about: {
       aboutTitle: "About Me.",
       aboutInfo: [
         {
-          left: "Mauris",
-          right: "View Mauris",
-          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+          left: "Education Background",
+          right: "Royal Hollway, University of London",
+          p: `I majored in Management with Marketing pathway undergraduate program at Royal Holloway, University of London, and completed all the studies on 19st October 2020. Got my degree certificate in July 2021. Yes it took nearly one year due to the global pandemic. It felt like forever while waiting. `,
         },
         {
-          left: "Mauris",
-          right: "View Mauris",
-          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+          left: "Why Programming?",
+          right: "Coding is amazing",
+          p: `I have always been interested in programming and computer science since I was little. For some reasons, however, I wasn’t able to do a computer science related degree at uni. There was not much time for me to teach myself coding during undergraduate studies because I had part-time jobs to do at the time. (ps. My financial status was bad)
+Luckly, Covid ruined everything I had planned (lol), and we were informed the degree cert would not be sent to us any time soon. Things started to get interesting, I told myself. I said alright, without any further ado, I am gonna learn how to code. But how? Well, I picked up the cheapest and most challenging way: teaching myself. And, there was a further ado, I took a long break first (lol). It is really tough and difficult. There were many times I wanted to give it up. Thanks to myself, I have come this far, and I don’t mind going a little bit further. I will list all resources I have used and things I have learned below.
+`,
         },
         {
-          left: "Mauris",
-          right: "View Mauris",
-          p: `In nec mauris sed nunc convallis placerat eget in risus. Morbi non erat id enim hendrerit porttitor. Pellentesque iaculis, nibh a lobortis ultricies, tortor tortor accumsan elit, id interdum est purus ut nisi. Vivamus consequat et elit quis maximus. Donec ultrices tristique risus, eu auctor felis lacinia sit amet. Nulla sollicitudin ante nec lobortis faucibus. Mauris fringilla nulla urna, ac semper nisl vulputate sed. Maecenas venenatis convallis turpis et sagittis. Phasellus tincidunt, lorem at venenatis tempus, enim arcu sodales sapien, at rutrum sem lacus in erat.`,
+          left: "CS50 - Introduction to Computer Science",
+          right: "View CS50",
+          p: `This is the first course I took, by far the most popular and best (in my opinion) free intro course on the internet. I really enjoyed this course, how the curriculum is structured, and the way David teaches.  I learned how the computer works in generally. What is data structure and algorithms and why it is important.`,
         },
         {
           left: "Mauris",
