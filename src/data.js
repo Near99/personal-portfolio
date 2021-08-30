@@ -19,7 +19,7 @@ export const data = {
       aboutInfo: [
         {
           left: "Status Update, 30th August 2021",
-          right: "Be better!",
+          right: "Be better",
           p: `I am the kind of person who has lots of curiosities about the core, fundamental concepts of the things I want to learn and study. I believe that no comprehensive understanding of what is under the hood results in no good outcomes when trying to master a skill, and no exceptions can go through this natural principle. I have always been amazed and shocked how some tools, libraries, frameworks are built while coding in a higher level abstraction with them. Since I have been learning for roughly four months, I gradually lost interest in building something that people who know nothing about programming may be surprised of but really just few APIs are used. I am fully aware being a real software engineer isn’t about how many programming languages you know, what kind of applications you can build. Coding in higher level abstractions can’t bring much to oneself. With that being said, I decided to switch my concentration from ‘superstructure’ to ‘substrate’ such as Computer Architecture, Structure and Interpretation of Computer Programs, Algorithms and Data Structures. I don’t wanna be the person who never quite understood something like recursion, really. Of course I will still spend some time on frontend technologies but will be trying to build tools, simple wheels, not applications.`,
         },
         {

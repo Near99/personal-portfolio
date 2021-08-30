@@ -47,7 +47,7 @@ const MainSection = styled.div`
   transition: all 0.4s ease-in-out;
 
   @media screen and (max-width: 8000px) {
-    height: 220vh;
+    height: 250vh;
   }
 
   @media screen and (max-width: 2695px) {
@@ -165,6 +165,6 @@ const OuterLinkRight = styled.a`
 
 const P = styled.p`
   @media screen and (max-width: 742px) {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 `;
