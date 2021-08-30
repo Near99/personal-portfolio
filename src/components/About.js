@@ -46,7 +46,11 @@ const MainSection = styled.div`
   color: ${(props) => props.theme.textc};
   transition: all 0.4s ease-in-out;
 
-  @media screen and (max-width: 3300px) {
+  @media screen and (max-width: 8000px) {
+    height: 220vh;
+  }
+
+  @media screen and (max-width: 2695px) {
     height: auto;
   }
 
@@ -152,6 +156,7 @@ const OuterLinkRight = styled.a`
   font-size: 1.3rem;
   color: ${(props) => props.theme.aboutlc};
   text-decoration: underline;
+  cursor: pointer;
 
   @media screen and (max-width: 742px) {
     font-size: 1rem;

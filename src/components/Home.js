@@ -52,6 +52,10 @@ const HomeSection = styled.section`
   background: ${(props) => props.theme.bgc};
   color: ${(props) => props.theme.textc};
   transition: all 0.4s ease-in-out;
+
+  @media screen and (max-width: 2085px) {
+    height: auto;
+  }
 `;
 
 const HeroContainer = styled.div`
@@ -59,6 +63,14 @@ const HeroContainer = styled.div`
   flex-flow: column;
   width: 60%;
   height: 70%;
+
+  @media screen and (min-width: 2458px) {
+    margin-bottom: 10rem;
+  }
+
+  @media screen and (min-width: 2085px) {
+    margin-bottom: 10rem;
+  }
 `;
 
 const TextContainer = styled.div`
