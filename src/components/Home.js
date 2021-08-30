@@ -48,7 +48,7 @@ const HomeSection = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   background: ${(props) => props.theme.bgc};
   color: ${(props) => props.theme.textc};
   transition: all 0.4s ease-in-out;
