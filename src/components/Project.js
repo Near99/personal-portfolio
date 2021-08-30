@@ -6,12 +6,12 @@ import styled from "styled-components";
 function Project({ handleSwitchTheme, handleSwitchLanguage, data }) {
   const projectTitle = data.project.projectTitle;
   const projectInfo = data.project.projectInfo;
-  const project = projectInfo.map((about, index) => {
+  const project = projectInfo.map((project, index) => {
     return (
       <List key={index}>
-        <OuterLinkLeft>{about.left}</OuterLinkLeft>
-        <OuterLinkRight>{about.right}</OuterLinkRight>
-        <P>{about.p}</P>
+        <OuterLinkLeft>{project.left}</OuterLinkLeft>
+        <OuterLinkRight href={project.link}>{project.right}</OuterLinkRight>
+        <P>{project.p}</P>
       </List>
     );
   });
@@ -41,7 +41,7 @@ const MainSection = styled.div`
   flex-flow: column;
   align-items: center;
   width: 100%;
-  height: 120vh;
+  min-height: 90vh;
   background: ${(props) => props.theme.bgc};
   color: ${(props) => props.theme.textc};
   transition: all 0.4s ease-in-out;
@@ -160,6 +160,6 @@ const OuterLinkRight = styled.a`
 
 const P = styled.p`
   @media screen and (max-width: 742px) {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 `;

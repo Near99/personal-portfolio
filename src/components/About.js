@@ -10,7 +10,7 @@ function About({ handleSwitchTheme, handleSwitchLanguage, data }) {
     return (
       <List key={index}>
         <OuterLinkLeft>{about.left}</OuterLinkLeft>
-        <OuterLinkRight>{about.right}</OuterLinkRight>
+        <OuterLinkRight href={about.link}>{about.right}</OuterLinkRight>
         <P>{about.p}</P>
       </List>
     );
